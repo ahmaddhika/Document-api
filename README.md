@@ -18,9 +18,9 @@ Check it [Here](https://restapifull-by-rey.herokuapp.com/api)
 
 
 ## Endopoint nya gimana bang?
-Cara Mengganti Nya Cukup Gampang, Kalian Hanya Perlu Untuk Mengganti Syntax Di Bawah Ini
+Pengambilan Endopoint
 ```js
-if(apikeyInput != 'MASUKKAN_NAMA_APIKEY') return res.json(loghandler.invalidKey)
+https://restapifull-by-rey.herokuapp.com/api/anime/boruto?apikey=administrator
 ```
 Atau
 

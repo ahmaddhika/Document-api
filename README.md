@@ -22,7 +22,8 @@ Pengambilan Endopoint
 ```js
 https://restapifull-by-rey.herokuapp.com/api/anime/boruto?apikey=administrator
 ```
-Atau
+## Client settings
+Atur di case bot WhatsApp mu
 
 ```js
 if(apikey != 'MASUKAN_NAMA_APIKEY') return res.json(loghandler.invalidKey)

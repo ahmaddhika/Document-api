@@ -20,8 +20,8 @@ Check it [Here](https://restapifull-by-rey.herokuapp.com/api)
 ## Endopoint?
 Pengambilan Endopoint
 ```js
-https://restapifull-by-rey.herokuapp.com/api/anime/minato?apikey=administrator
-https://raw.githubusercontent.com/inirey/Document-api/main/minato.json
+await fetchJson(`https://restapifull-by-rey.herokuapp.com/api/anime/minato?apikey=administrator`, {method: 'get'})
+await fetchJson(`https://raw.githubusercontent.com/inirey/Document-api/main/minato.json`)
 ```
 ## Client settings
 Atur di case bot WhatsApp mu

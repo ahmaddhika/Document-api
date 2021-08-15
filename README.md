@@ -17,21 +17,31 @@
 Check it [Here](https://restapifull-by-rey.herokuapp.com/api)
 
 
-## Endopoint nya gimana bang?
+## Endopoint?
 Pengambilan Endopoint
 ```js
 https://restapifull-by-rey.herokuapp.com/api/anime/minato?apikey=administrator
+https://raw.githubusercontent.com/inirey/Document-api/main/minato.json
 ```
 ## Client settings
 Atur di case bot WhatsApp mu
 
 ```js
-case 'minato':
-      anu = await fetchJson(`https://restapifull-by-rey.herokuapp.com/api/anime/Minato?&Apikey=administrator`, {method: 'get'})
-      min = JSON.parse(JSON.stringify(anu));
-      ato =  min[Math.floor(Math.random() * min.length)];
-      nye = await getBuffer(ato)
-      rey.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
-      break 
+anu = await fetchJson(`https://restapifull-by-rey.herokuapp.com/api/anime/minato?&Apikey=administrator`, {method: 'get'})
+min = JSON.parse(JSON.stringify(anu));
+ato =  min[Math.floor(Math.random() * min.length)];
+nye = await getBuffer(ato)
+rey.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+```
+</p>
+
+Atau juga bisa
+
+```js
+anu = await fetchJson(`https://raw.githubusercontent.com/inirey/Document-api/main/minato.json`, {method: 'get'})
+min = JSON.parse(JSON.stringify(anu));
+ato =  min[Math.floor(Math.random() * min.length)];
+nye = await getBuffer(ato)
+rey.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
 ```
 </p>

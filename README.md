@@ -13,11 +13,11 @@
 <a href="https://github.com/zeeoneofc/api-zeeoneofc/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zeeoneofc/api-zeeoneofc?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
-## Api Features
-Check it yourself [Here](https://xyz-restapikey.herokuapp.com)
+## main REST- API
+Check it [Here](https://restapifull-by-rey.herokuapp.com/api)
 
 
-## Cara Ganti ApiKey Gimana?
+## Endopoint nya gimana bang?
 Cara Mengganti Nya Cukup Gampang, Kalian Hanya Perlu Untuk Mengganti Syntax Di Bawah Ini
 ```js
 if(apikeyInput != 'MASUKKAN_NAMA_APIKEY') return res.json(loghandler.invalidKey)

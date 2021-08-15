@@ -27,22 +27,11 @@ Atur di case bot WhatsApp mu
 
 ```js
 case 'minato':
-				if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				
-				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
-					reply(mess.wait)
-					try {
-					anu = await fetchJson(`https://restapifull-by-rey.herokuapp.com/api/anime/Minato?&Apikey=administrator`, {method: 'get'})
-					min = JSON.parse(JSON.stringify(anu));
-					ato =  min[Math.floor(Math.random() * min.length)];
-					nye = await getBuffer(ato)
-					rey.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
-					} catch {
-					reply(mess.error.bug)
-					}
-					await limitAdd(sender)
-					break 
+      anu = await fetchJson(`https://restapifull-by-rey.herokuapp.com/api/anime/Minato?&Apikey=administrator`, {method: 'get'})
+      min = JSON.parse(JSON.stringify(anu));
+      ato =  min[Math.floor(Math.random() * min.length)];
+      nye = await getBuffer(ato)
+      rey.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+      break 
 ```
 </p>
